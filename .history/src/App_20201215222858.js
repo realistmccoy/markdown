@@ -6,10 +6,7 @@ export default function App() {
 
 	return (
 		<div className='app'>
-			<textarea
-				onChange={(e) => SetMarkdown(e.target.value)}
-				value={markdown}
-			/>
+			<textarea onChange= value={markdown} />
 			<div className='preview' /> {markdown}
 		</div>
 	);
