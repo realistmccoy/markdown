@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ReactMarkdown from 'react-markdown';
+import marked from 'marked';
 import './App.css';
 
 export default function App() {
@@ -9,10 +9,17 @@ export default function App() {
 		SetMarkdown(e.target.value);
 	}
 
+	function da
+
 	return (
 		<div className='app'>
 			<textarea onChange={handleChange} value={markdown} />
-			<ReactMarkdown className='preview' source={markdown} />
+			<div
+				className='preview'
+				dangerouslySetInnerHTML={{ __html: marked(markdown) }}
+			>
+				{' '}
+			</div>
 		</div>
 	);
 }

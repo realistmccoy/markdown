@@ -36,11 +36,8 @@ blockquote {
 	margin: 0;
 }
 
-blockqoute {
-	font-size: 30px;
+.blockqoute {
+	font-size: 50px;
 	background: white;
 	border-left: blue;
-	padding: 20px, 30px;
-	border-radius: 5px;
-	margin: 0;
 }
