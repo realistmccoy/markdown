@@ -4,13 +4,14 @@ import './App.css';
 export default function App() {
 	const [markdown, SetMarkdown] = useState('#Type');
 
-	function handleChange(e) {
-		SetMarkdown(e.target.value);
-	}
+  function 
 
 	return (
 		<div className='app'>
-			<textarea onChange={handleChange} value={markdown} />
+			<textarea
+				onChange={(e) => SetMarkdown(e.target.value)}
+				value={markdown}
+			/>
 			<div className='preview' /> {markdown}
 		</div>
 	);
